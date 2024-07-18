@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+body, html{
+    margin: 0px;
+}
+.menu{
+    position: relative;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    }
+.menu a{
+    font-family: "poppins",sans-serif;
+    color: #878787;
+    font-weight: 800px;
+}
+
+
+
+.menu li a.bar{
+    position: relative;
+    padding-bottom: 10px;
+    
+}
+
+
+.menu li a.bar::after{
+content: " ";
+display: block;
+background-color: black;
+bottom: -2px;
+width: 0;
+left: 50%;
+height: 4px;
+transition: all .5s;
+position: absolute;
+}
+.menu li a.bar:hover::after{
+    width: 100%;
+    left: 0;
+    transition: all .5s;
+}
+.subMenu{
+    position: absolute;
+   margin-top: 11px;
+   border-radius: 10px;
+   padding: 20px;
+   display: none;
+   max-width: 100%; 
+   background-color: rgb(250, 250, 250);
+}
+.menu li{
+    max-width: 100%;
+}
+.menu li:hover .subMenu{
+    display: block;
+}
+.menu li:hover{
+    
+}
+
+.subMenu ul{
+    list-style: none;
+    padding: 10px;
+}
+
+.subMenu li{
+    padding-bottom: 5px;
+    margin-bottom: 3px;
+    border-bottom: 1px solid #e1e0e0 ;
+    
+}
+.subMenu, .menu  a{
+    text-decoration: none;
+}
+
+.subMenu li a.arrow::after{
+    border-right: 1.5px solid #e1e0e0;
+    border-bottom: 1.5px solid #e1e0e0;
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    height: 8px;
+    width: 8px;
+    transform: rotate(315deg);
+    margin-left: 5px;
+    margin-top: 2px;
+    position: absolute;
+    right: 10px;
+}
+
+.subMenu li a.arrow:hover::after{
+    margin-left: 10px;
+    border-right: 1.5px solid #000000;
+    border-bottom: 1.5px solid #000000;
+    transition: all 1s;
+}
+
+.subMenu li a:hover{
+    margin-left: 5px;
+    transition: all 1s;
+}

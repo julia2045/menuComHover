@@ -1,0 +1,101 @@
+ <!--diz qual versãodo html que a pagina será escrita -->
+ <!doctype html> 
+ <!-- em qual linguagem o site será escrito -->
+<html lang="pt-br"> 
+    <!-- informações gerais como metadados, sobre documentos incluindo links e folhas de estilos -->
+    <head>
+        <!-- meta define qualquer informação sem tag -->
+         <!-- charset="utf-8" permite o uso de acentos e Ç -->
+        <meta charset="UTF-8"> 
+        <!-- controle da janela de visualização em pixel e controle do nivel de zoom  quando a tela inicia pela primeira vez -->
+        <meta name="viewport" content="width= device-width, initial-scale=1.0">
+        <!-- link para adiconar estilos -->
+        <link rel="stylesheet" href="/style.css">
+        <!-- titulo -->
+         <title>Menu com Submenu com hover</title>
+    </head>
+    <!-- corpo do projeto -->
+    <body>
+        <!-- criar um menu com itens em uma ul principal que ficará visivel
+         depois criar uls necessarias dentro de cada item para se criar os submenus diretos -->
+        <header>
+            <!-- nav tag sematica que indica navegação entre elementos/ propriedades -->
+            <nav>
+                <ul  class="menu">
+                    <li>
+                        <a class="bar"  href="/">Cachorro</a>
+                        <div class="subMenu">
+                            <ul>
+                                <li><a class="arrow" href="/">Petiscos</a></li>
+                                <li><a class="arrow" href="/">Rações</a></li>
+                                <li><a class="arrow" href="/">Medicina e Saúde</a></li>
+                                <li><a class="arrow" href="/">Shampoos e Cosméticos</a></li>
+                                <li><a class="arrow" href="/">Adestramento</a></li>
+                                <li><a class="arrow" href="/">Brinquedos</a></li>
+                                <li><a class="arrow" href="/">Roupas e Acessórios</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="bar"  href="/">Gatos</a>
+                        <div class="subMenu">
+                            <nav>
+                                <ul>
+                                    <li><a class="arrow" href="/">Petiscos</a></li>
+                                    <li><a class="arrow" href="/">Rações</a></li>
+                                    <li><a class="arrow" href="/">Medicina e Saúde</a></li>
+                                    <li><a class="arrow" href="/">Shampoos e Cosméticos</a></li>
+                                    <li><a class="arrow" href="/">Adestramento</a></li>
+                                    <li><a class="arrow" href="/">Brinquedos</a></li>
+                                    <li><a class="arrow" href="/">Roupas e Acessórios</a></li>
+                                    <li><a class="arrow" href="/">Caixa de Areia e Limpeza</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </li>  
+                    <li>
+                        <a class="bar" href="/">Outros Pets</a>
+                        <div class="subMenu">
+                            <nav>
+                                <ul>
+                                    <li><a class="arrow" href="/">Passáros</a></li>
+                                    <li><a class="arrow" href="/">Roedores</a></li>
+                                    <li><a class="arrow" href="/">Roedores</a></li>
+                                    <li><a class="arrow" href="/">Peixes</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </li>      
+                    <li>
+                        <a class="bar"  href="/">Plano de Saúde</a>
+                        <div class="subMenu">
+                            <nav>
+                                <ul>
+                                    <li><a class="arrow" href="/">Planos de Saúde</a></li>
+                                    <li><a class="arrow" href="/">Planos de Saúde - Empresas</a></li>
+                                    <li><a class="arrow" href="/">Redes credenciadas</a></li>
+                                    <li><a class="arrow" href="/">Seja Credenciado</a></li>
+                                    <li><a class="arrow" href="/">Glossário de Doenças</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="bar"  href="/">Contato</a>
+                        <div class="subMenu">
+                            <nav>
+                                <ul>
+                                    <li><a class="arrow" href="">WhatsApp</a></li>
+                                    <li><a class="arrow" href="">Telefone Fixo</a></li>
+                                    <li><a class="arrow" href="">Email</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </li>
+                        
+                </ul>
+            </nav>
+        </header>
+    </body>
+</html>
+
